@@ -13,7 +13,7 @@ function TaskDetails() {
 
     useEffect(() => {
         const fetchTask = async () => {
-            const res =await fetch(`http://localhost:8500/tasks/${params.id}`)
+            const res =await fetch(`https://web-assist.onrender.com/tasks/${params.id}`)
             const data = await res.json()
 
             if(res.status === 404) {
