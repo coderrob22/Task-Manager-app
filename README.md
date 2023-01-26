@@ -1,3 +1,30 @@
+# Web Assistant Task-Manager
+Online task-tracking assistant to save you time and memory. 
+
+**Link to project: https://web-assist.onrender.com/** 
+
+https://user-images.githubusercontent.com/105181695/214955412-f51ffcef-68a9-4706-bbc0-4b60ad6a7d45.mov
+
+
+## How It's Made:
+
+**Tech used:** React.js, JSON-server, Node.js, Bootstrap.
+
+This is an online task-tracking app. This app features the ability to save tasks, delete tasks, and even be reminded of tasks and their due date. Take a look. 
+
+## Lessons Learned:
+
+Some lessons I learned were: 
+I did not know how to create a JSON server before doing this project. The only servers I was familiar with was a node express server. 
+
+## Examples:
+Take a look at these couple examples that I have in my own portfolio:
+
+**Jeopardy Party:** https://github.com/coderrob22/Jeopardy-API
+
+**Journal Life:** https://github.com/coderrob22/Journal-Life 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
