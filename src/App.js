@@ -20,20 +20,20 @@ const App = () => {
   }, [])
 
   const fetchTasks = async () => {
-    const res = await fetch('http://localhost:8500/tasks')
+    const res = await fetch('https://web-assist.onrender.com/tasks')
     const data = await res.json()
     return data
   }
 
   const fetchTask = async (id) => {
-    const res = await fetch(`http://localhost:8500/tasks/${id}`)
+    const res = await fetch(`https://web-assist.onrender.com/${id}`)
     const data = await res.json()
     return data
   }
 
 const addTask = async (task) => {
 
-  const res = await fetch('http://localhost:8500/tasks', {method: 'POST',
+  const res = await fetch('https://web-assist.onrender.com/tasks', {method: 'POST',
   headers: {
     'Content-type': 'application/json'
   },
@@ -50,7 +50,7 @@ const addTask = async (task) => {
 }
 
 const deleteTask = async (id) => {
-  await fetch(`http://localhost:8500/tasks/${id}`, {
+  await fetch(`https://web-assist.onrender.com/tasks/${id}`, {
     method: 'DELETE'
   })
 
@@ -61,7 +61,7 @@ const toggleReminder = async (id) => {
   const taskToToggle = await fetchTask(id)
   const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
 
-  const res = await fetch(`http://localhost:8500/tasks/${id}`, {
+  const res = await fetch(`https://web-assist.onrender.com/tasks/${id}`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json',
